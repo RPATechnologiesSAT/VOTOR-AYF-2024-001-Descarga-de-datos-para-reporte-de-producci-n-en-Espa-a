@@ -151,7 +151,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="772,4742" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SendEmail" sap:VirtualizedContainerService.HintSize="974,4344" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="int_Contador" />
       <Variable x:TypeArguments="x:String" Name="str_Subject" />
@@ -166,14 +166,14 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="710,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;--- Iniciando módulo 'SendEmail' ---&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="710,4317" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="710,3984" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Variables>
         <Variable x:TypeArguments="upr:ILocalResource" Name="Resource_WordResultFilePath" />
         <Variable x:TypeArguments="x:String" Name="ArrayMails" />
         <Variable x:TypeArguments="upr:ILocalResource" Name="Resource_ExcelResultFilePath" />
       </TryCatch.Variables>
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="672,4035" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence sap:VirtualizedContainerService.HintSize="588,3702" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="AdressesToSend" />
           </Sequence.Variables>
@@ -182,7 +182,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <If Condition="[String.IsNullOrWhiteSpace(in_MailAdressToSend)]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="610,474" sap2010:WorkflowViewState.IdRef="If_3">
+          <If Condition="[String.IsNullOrWhiteSpace(in_MailAdressToSend)]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="554,432" sap2010:WorkflowViewState.IdRef="If_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -190,17 +190,17 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,201" sap2010:WorkflowViewState.IdRef="Sequence_24">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="Sequence_24">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Throw DisplayName="Lanzar excepción" Exception="[new BusinessRuleException(&quot;Falta el mail para enviar&quot;)]" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                <Throw DisplayName="Lanzar excepción" Exception="[new BusinessRuleException(&quot;Falta el mail para enviar&quot;)]" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_25">
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_25">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -209,15 +209,15 @@
               </Sequence>
             </If.Else>
           </If>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="610,394" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="554,366" sap2010:WorkflowViewState.IdRef="CommentOut_7">
             <ui:CommentOut.Body>
-              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,283" sap2010:WorkflowViewState.IdRef="Sequence_33">
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,255" sap2010:WorkflowViewState.IdRef="Sequence_33">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CreateListPathScreenshots.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="email\CreateListPathScreenshots.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CreateListPathScreenshots.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="382,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="email\CreateListPathScreenshots.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <OutArgument x:TypeArguments="scg:IEnumerable(x:String)" x:Key="out_List">[list_PathScreenshots]</OutArgument>
                     <InArgument x:TypeArguments="x:String" x:Key="in_FolderPath">[in_Config("ExScreenshotsFolderPath").ToString]</InArgument>
@@ -226,7 +226,7 @@
               </Sequence>
             </ui:CommentOut.Body>
           </ui:CommentOut>
-          <If Condition="[CInt(in_ResultStatus) = 0]" DisplayName="Success?" sap:VirtualizedContainerService.HintSize="610,1176" sap2010:WorkflowViewState.IdRef="If_2">
+          <If Condition="[CInt(in_ResultStatus) = 0]" DisplayName="Success?" sap:VirtualizedContainerService.HintSize="554,1078" sap2010:WorkflowViewState.IdRef="If_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -234,13 +234,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="576,903" sap2010:WorkflowViewState.IdRef="Sequence_20">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="520,819" sap2010:WorkflowViewState.IdRef="Sequence_20">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence sap:VirtualizedContainerService.HintSize="514,815" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                <Sequence sap:VirtualizedContainerService.HintSize="486,759" sap2010:WorkflowViewState.IdRef="Sequence_23">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -287,15 +287,15 @@
 &lt;/tr&gt;"]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,385" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,357" sap2010:WorkflowViewState.IdRef="CommentOut_8">
                     <ui:CommentOut.Body>
-                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,283" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,255" sap2010:WorkflowViewState.IdRef="Sequence_34">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CreateReport.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="email\CreateReport.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CreateReport.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="382,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="email\CreateReport.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
                             <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DataTable">[in_DataTable]</InArgument>
                             <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
@@ -309,7 +309,7 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_21">
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_21">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -318,7 +318,7 @@
               </Sequence>
             </If.Else>
           </If>
-          <Assign sap:VirtualizedContainerService.HintSize="610,115" sap2010:WorkflowViewState.IdRef="Assign_3">
+          <Assign sap:VirtualizedContainerService.HintSize="554,115" sap2010:WorkflowViewState.IdRef="Assign_3">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[str_Body]</OutArgument>
             </Assign.To>
@@ -457,7 +457,7 @@
 &lt;/html&gt;"]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="610,84" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="554,57" sap2010:WorkflowViewState.IdRef="CommentOut_6">
             <ui:CommentOut.Body>
               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,508" sap2010:WorkflowViewState.IdRef="Sequence_32">
                 <sap:WorkflowViewStateService.ViewState>
@@ -476,8 +476,8 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:CommentOut>
-          <ui:PathExists Exists="{x:Null}" DisplayName="Path Exists" sap:VirtualizedContainerService.HintSize="610,147" sap2010:WorkflowViewState.IdRef="PathExists_4" Path="[in_ExcelFilePath]" PathType="File" Resource="[Resource_ExcelResultFilePath]" />
-          <If Condition="[String.IsNullOrEmpty(str_HtmlTablas)]" DisplayName="SE o BE?" sap:VirtualizedContainerService.HintSize="610,1557" sap2010:WorkflowViewState.IdRef="If_1">
+          <ui:PathExists Exists="{x:Null}" DisplayName="Path Exists" sap:VirtualizedContainerService.HintSize="554,147" sap2010:WorkflowViewState.IdRef="PathExists_4" Path="[in_ExcelFilePath]" PathType="File" Resource="[Resource_ExcelResultFilePath]" />
+          <If Condition="[String.IsNullOrEmpty(str_HtmlTablas)]" DisplayName="SE o BE?" sap:VirtualizedContainerService.HintSize="554,1447" sap2010:WorkflowViewState.IdRef="If_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -485,13 +485,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,564" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,536" sap2010:WorkflowViewState.IdRef="Sequence_18">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="dfe343f4-94b9-4c04-a60a-cb91d9cf3c32" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="354,476" sap2010:WorkflowViewState.IdRef="SendMailConnections_3" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="[in_Config(&quot;AsuntoCorreo&quot;).ToString + &quot; &quot;+in_Sociedad+&quot; &quot;+Now.ToString(&quot;yyyyMM&quot;)+&quot; - &quot;+ in_ProjectName]" TextBody="[str_Body]" To="[Strings.Split(in_MailAdressToSend,&quot;;&quot;)]" UseConnectionService="True" UseSharedMailbox="False">
+                <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="dfe343f4-94b9-4c04-a60a-cb91d9cf3c32" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382,476" sap2010:WorkflowViewState.IdRef="SendMailConnections_3" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="[in_Config(&quot;AsuntoCorreo&quot;).ToString + &quot; &quot;+in_Sociedad+&quot; &quot;+Now.ToString(&quot;yyyyMM&quot;)+&quot; - &quot;+ in_ProjectName]" TextBody="[str_Body]" To="[Strings.Split(in_MailAdressToSend,&quot;;&quot;)]" UseConnectionService="True" UseSharedMailbox="False">
                   <umam:SendMailConnections.AttachmentList>
                     <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="0" />
                   </umam:SendMailConnections.AttachmentList>
@@ -527,13 +527,13 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,832" sap2010:WorkflowViewState.IdRef="Sequence_19">
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,750" sap2010:WorkflowViewState.IdRef="Sequence_19">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[str_Body]" ConnectionId="dfe343f4-94b9-4c04-a60a-cb91d9cf3c32" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="354,585" sap2010:WorkflowViewState.IdRef="SendMailConnections_7" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[in_Config(&quot;AsuntoCorreo&quot;).ToString + &quot; &quot;+in_Sociedad+&quot; &quot;+Now.ToString(&quot;yyyyMM&quot;)+&quot; - &quot;+ in_ProjectName]" To="[Strings.Split(in_MailAdressToSend,&quot;;&quot;)]" UseConnectionService="True" UseSharedMailbox="False">
+                <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[str_Body]" ConnectionId="dfe343f4-94b9-4c04-a60a-cb91d9cf3c32" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382,585" sap2010:WorkflowViewState.IdRef="SendMailConnections_7" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[in_Config(&quot;AsuntoCorreo&quot;).ToString + &quot; &quot;+in_Sociedad+&quot; &quot;+Now.ToString(&quot;yyyyMM&quot;)+&quot; - &quot;+ in_ProjectName]" To="[Strings.Split(in_MailAdressToSend,&quot;;&quot;)]" UseConnectionService="True" UseSharedMailbox="False">
                   <umam:SendMailConnections.AttachmentList>
                     <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="0" />
                   </umam:SendMailConnections.AttachmentList>
@@ -569,7 +569,7 @@
                     </usau:BackupSlot>
                   </umam:SendMailConnections.MailboxBackup>
                 </umam:SendMailConnections>
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,84" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                   <ui:CommentOut.Body>
                     <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,160" sap2010:WorkflowViewState.IdRef="Sequence_30">
                       <sap:WorkflowViewStateService.ViewState>
@@ -634,7 +634,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:CommentOut>
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,75" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                   <ui:CommentOut.Body>
                     <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,254" sap2010:WorkflowViewState.IdRef="Sequence_27">
                       <sap:WorkflowViewStateService.ViewState>

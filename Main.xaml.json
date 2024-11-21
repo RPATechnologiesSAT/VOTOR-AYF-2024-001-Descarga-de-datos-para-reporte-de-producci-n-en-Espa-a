@@ -6,18 +6,6 @@
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "in_OrchestratorQueueName",
-      "DisplayName": "in_OrchestratorQueueName",
-      "Category": null,
-      "Tooltip": null,
-      "Placeholder": "",
-      "Widget": null,
-      "IsRequired": false,
-      "IsPrincipal": true,
-      "ArgumentType": 0,
-      "DataSourceItems": null
-    },
-    {
       "Name": "in_OrchestratorFolderName",
       "DisplayName": "in_OrchestratorFolderName",
       "Category": null,
@@ -35,18 +23,6 @@
       "Category": null,
       "Tooltip": null,
       "Placeholder": "",
-      "Widget": null,
-      "IsRequired": false,
-      "IsPrincipal": true,
-      "ArgumentType": 0,
-      "DataSourceItems": null
-    },
-    {
-      "Name": "in_dt_reporte",
-      "DisplayName": "in_dt_reporte",
-      "Category": null,
-      "Tooltip": null,
-      "Placeholder": null,
       "Widget": null,
       "IsRequired": false,
       "IsPrincipal": true,

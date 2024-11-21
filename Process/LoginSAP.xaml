@@ -124,7 +124,7 @@
       <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="LoginSAP" sap:VirtualizedContainerService.HintSize="1166,3521" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="LoginSAP" sap:VirtualizedContainerService.HintSize="1504,2392" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="pass" />
       <Variable x:TypeArguments="x:String" Name="user" />
@@ -134,10 +134,10 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1104,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;----- Iniciando secuencia 'Login_SAP' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1104,3260" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1048,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;----- Iniciando secuencia 'Login_SAP' -----&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1048,2196" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1066,2987" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence sap:VirtualizedContainerService.HintSize="1010,1923" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="errorLogin" />
             <Variable x:TypeArguments="x:Boolean" Name="boo_PopUpErrLogin" />
@@ -148,18 +148,18 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1004,165" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="saplogon" />
-          <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_CredentialAssetName]" CacheStrategy="None" DisplayName="Get Credential" FolderPath="[in_OrchestratorFolderPath]" sap:VirtualizedContainerService.HintSize="1004,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[pass]" Username="[user]" />
-          <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1004,456" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+          <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="976,165" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="saplogon" />
+          <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_CredentialAssetName]" CacheStrategy="None" DisplayName="Get Credential" FolderPath="[in_OrchestratorFolderPath]" sap:VirtualizedContainerService.HintSize="976,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[pass]" Username="[user]" />
+          <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="976,428" sap2010:WorkflowViewState.IdRef="RetryScope_1">
             <ui:RetryScope.ActivityBody>
               <ActivityAction>
-                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,249" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,221" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ucas:Logon Window="{x:Null}" ConnectionName="[in_connectionName]" DelayBetweenRetries="500" DisplayName="SAP Logon" sap:VirtualizedContainerService.HintSize="354,161" sap2010:WorkflowViewState.IdRef="Logon_2" Retries="5" SAPLogonPath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" />
+                  <ucas:Logon Window="{x:Null}" ConnectionName="[in_connectionName]" DelayBetweenRetries="500" DisplayName="SAP Logon" sap:VirtualizedContainerService.HintSize="382,161" sap2010:WorkflowViewState.IdRef="Logon_2" Retries="5" SAPLogonPath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe" />
                 </Sequence>
               </ActivityAction>
             </ui:RetryScope.ActivityBody>
@@ -167,19 +167,19 @@
               <ActivityFunc x:TypeArguments="x:Boolean" />
             </ui:RetryScope.Condition>
           </ui:RetryScope>
-          <uix:NCheckState DisplayName="Check App State 'SAP Easy'" sap:VirtualizedContainerService.HintSize="1004,959" sap2010:WorkflowViewState.IdRef="NCheckState_3" Version="V3">
+          <uix:NCheckState DisplayName="Check App State 'SAP Easy'" sap:VirtualizedContainerService.HintSize="976,933" sap2010:WorkflowViewState.IdRef="NCheckState_3" Version="V3">
             <uix:NCheckState.IfExists>
-              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_15">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Sesión inciada en SAP exitosamente&quot;]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Sesión inciada en SAP exitosamente&quot;]" />
               </Sequence>
             </uix:NCheckState.IfExists>
             <uix:NCheckState.IfNotExists>
-              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="500,710" sap2010:WorkflowViewState.IdRef="Sequence_16">
+              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="472,684" sap2010:WorkflowViewState.IdRef="Sequence_16">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -222,16 +222,22 @@
             <uix:NCheckState.Target>
               <uix:TargetAnchorable DesignTimeRectangle="16, 40, 1878, 48" DesignTimeScaleFactor="1" ElementType="Toolbar" FullSelectorArgument="&lt;sap id='titl' text='SAP Easy Access  -  Menú usuario*' /&gt;" FuzzySelectorArgument="&lt;sap id='titl' text='SAP Easy Access  -  Menú usuario*' check:text='SAP Easy Access  -  Menú usuario p. S_RPA_CORP S_RPA_CORP' /&gt;" Guid="4c3fcb97-f090-405a-84ee-223c6372b49a" InformativeScreenshot="d78091ceb357efb36937aa87608577dd.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access  -  Menú usuario *' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
             </uix:NCheckState.Target>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
           </uix:NCheckState>
-          <uix:NCheckState DisplayName="Check App State 'Cantidad de'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="1004,524" sap2010:WorkflowViewState.IdRef="NCheckState_2" Version="V3">
+          <uix:NCheckState DisplayName="Check App State 'Cantidad de'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="976,57" sap2010:WorkflowViewState.IdRef="NCheckState_2" Version="V3">
             <uix:NCheckState.IfExists>
-              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,275" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,247" sap2010:WorkflowViewState.IdRef="Sequence_12">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ucas:ClickToolbarButton ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Click Toolbar Button 'Button Continuar'" sap:VirtualizedContainerService.HintSize="388,185" sap2010:WorkflowViewState.IdRef="ClickToolbarButton_1" Item="Continuar   (Intro)">
+                <ucas:ClickToolbarButton ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Click Toolbar Button 'Button Continuar'" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="ClickToolbarButton_1" Item="Continuar   (Intro)">
                   <ucas:ClickToolbarButton.Items>
                     <scg:List x:TypeArguments="x:String" Capacity="4">
                       <x:String xml:space="preserve">Continuar   (Intro)</x:String>
@@ -263,37 +269,103 @@
             <uix:NCheckState.Target>
               <uix:TargetAnchorable DesignTimeRectangle="60, 72, 407, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;sap id='usr/txtMESSTXT1' text='Cantidad de intentos de inicio de sesión fallidos:' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/txtMESSTXT1' text='Cantidad de intentos de inicio de sesión fallidos:' check:text='Cantidad de intentos de inicio de sesión fallidos:' /&gt;" Guid="af10103f-f2f9-4a94-8937-a51b6fb1fa0f" InformativeScreenshot="2e3413e2800888635018a3df2eab658f.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Información' idx='*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
             </uix:NCheckState.Target>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
           </uix:NCheckState>
-          <uix:NCheckState DisplayName="Check App State 'SAP Easy'" sap:VirtualizedContainerService.HintSize="1004,620" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V3">
+          <uix:NCheckState DisplayName="Check App State 'Copyright'" sap:VirtualizedContainerService.HintSize="976,57" sap2010:WorkflowViewState.IdRef="NCheckState_4" Timeout="3" Version="V3">
             <uix:NCheckState.IfExists>
-              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,422" sap2010:WorkflowViewState.IdRef="Sequence_17">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Inicio de sesión completado con éxito&quot;]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Cerrando ventana de copyright&quot;]" />
+                <ucas:SelectMenuItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Select Menu Item 'Copyright'" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="SelectMenuItem_1" Item="Continuar   (Intro)">
+                  <ucas:SelectMenuItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                      <x:String xml:space="preserve">Continuar   (Intro)</x:String>
+                    </scg:List>
+                  </ucas:SelectMenuItem.Items>
+                  <ucas:SelectMenuItem.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8a153c2-436d-4ca8-9f12-fe8468658f2c" InformativeScreenshot="0712bf61e53c78584152466768cd46a5" Selector="&lt;sap id='tbar[0]' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ucas:SelectMenuItem.Target>
+                </ucas:SelectMenuItem>
               </Sequence>
             </uix:NCheckState.IfExists>
             <uix:NCheckState.IfNotExists>
-              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,380" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_18">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;No ha sido posible realizar el login en SAP&quot;]" />
-                <Throw DisplayName="Throw SE" Exception="[new BusinessRuleException(&quot;No ha sido posible realizar el login en SAP&quot;)]" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;No ha aparecido la ventana de copyright&quot;]" />
+              </Sequence>
+            </uix:NCheckState.IfNotExists>
+            <uix:NCheckState.Target>
+              <uix:TargetAnchorable DesignTimeRectangle="0, 0, 416, 616" DesignTimeScaleFactor="1" ElementType="Toolbar" Guid="400ab9fb-c8e1-427b-b9df-52b0447aaeda" InformativeScreenshot="1b7fafb9377487c4789bf915008df14a.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='Copyright' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                <uix:TargetAnchorable.FuzzySelectorArgument>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </uix:TargetAnchorable.FuzzySelectorArgument>
+              </uix:TargetAnchorable>
+            </uix:NCheckState.Target>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NCheckState>
+          <uix:NCheckState DisplayName="Check App State 'SAP Easy'" sap:VirtualizedContainerService.HintSize="976,48" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V3">
+            <uix:NCheckState.IfExists>
+              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Inicio de sesión completado con éxito&quot;]" />
+              </Sequence>
+            </uix:NCheckState.IfExists>
+            <uix:NCheckState.IfNotExists>
+              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,352" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;No ha sido posible realizar el login en SAP&quot;]" />
+                <Throw DisplayName="Throw SE" Exception="[new BusinessRuleException(&quot;No ha sido posible realizar el login en SAP&quot;)]" sap:VirtualizedContainerService.HintSize="416,115" sap2010:WorkflowViewState.IdRef="Throw_1" />
               </Sequence>
             </uix:NCheckState.IfNotExists>
             <uix:NCheckState.Target>
               <uix:TargetAnchorable DesignTimeRectangle="16, 40, 1878, 48" DesignTimeScaleFactor="1" ElementType="Toolbar" FullSelectorArgument="&lt;sap id='titl' text='SAP Easy Access  -  Menú usuario *' /&gt;" FuzzySelectorArgument="&lt;sap id='titl' text='SAP Easy Access  -  Menú usuario *' check:text='SAP Easy Access  -  Menú usuario p. Ivan Picatoste' /&gt;" Guid="5c5176c9-b42f-40f8-9291-0d65ac7606aa" InformativeScreenshot="36fce5e967fd8d63d58daae4be0e45cd.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access  -  Menú usuario*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
             </uix:NCheckState.Target>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
           </uix:NCheckState>
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1020,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1014,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -304,13 +376,13 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="416,366" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence sap:VirtualizedContainerService.HintSize="416,338" sap2010:WorkflowViewState.IdRef="Sequence_8">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;No ha sido posible realizar el login en SAP&quot;]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;No ha sido posible realizar el login en SAP&quot;]" />
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;----- Finalizando secuencia 'Login_SAP' -----&quot;]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -323,7 +395,7 @@
             </Sequence>
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="1020,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="1014,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -334,13 +406,13 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="416,208" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <Sequence sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="Sequence_14">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;----- Finalizando secuencia 'Login_SAP' -----&quot;]">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;----- Finalizando secuencia 'Login_SAP' -----&quot;]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>

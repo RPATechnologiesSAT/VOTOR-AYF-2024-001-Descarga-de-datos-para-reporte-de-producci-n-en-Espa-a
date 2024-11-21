@@ -38,6 +38,26 @@
 			"Name": "OrquestratorFolderName",
 			"Value": "Shared",
             "Description": "Carpeta donde se alojan algunos assets"
+		},
+		{
+			"Name": "SAP_Language",
+			"Value": "ES",
+            "Description": "Lenguaje SAP"
+		},
+		{
+			"Name": "SAP_Client",
+			"Value": "333",
+            "Description": "Cliente SAP"
+		},
+		{
+			"Name": "SAPCredentialsName",
+			"Value": "Cred_SAP_Robot",
+            "Description": "SAP Credential Asset Name"
+		},
+		{
+			"Name": "OfficeCredentialsName",
+			"Value": "Credential_Office",
+            "Description": "SAP Credential Asset Name"
 		}
     ],
 
@@ -47,40 +67,12 @@
             "Description": "Descripcion del Asset"
 		},
 		{
-			"Name": "SAP_GC_ConnectionName",
-            "Description": "Descripcion del Asset"
-		},
-		{
-			"Name": "SAP_GC_ConnectionName_Prod",
-            "Description": "Descripcion del Asset"
-		},
-		{
-			"Name": "SAP_Language",
-            "Description": "Descripcion del Asset"
-		},
-		{
-			"Name": "SAP_Client",
+			"Name": "SAP_GCP_ConnectionName",
             "Description": "Descripcion del Asset"
 		},
 		{
 			"Name":"URL_FicherosSharePoint",
 			"Description": "Direccion URL sharepoint"
 		}
-    ],
- 
-    "Credentials": [
-        {
-            "Name": "Cred_SAP_Robot",
-            "OrchestratorFolder": "Shared"
-        },
-		{
-			"Name": "Cred_SAP_Ivan",
-            "OrchestratorFolder": "ReporteProduccion"
-		},
-		{
-			"Name": "Credential_Office",
-            "OrchestratorFolder": "Shared"
-		}
-		
     ]
 }

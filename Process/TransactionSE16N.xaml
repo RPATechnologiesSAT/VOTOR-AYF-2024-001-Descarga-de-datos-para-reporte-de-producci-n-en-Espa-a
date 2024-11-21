@@ -148,16 +148,16 @@
       <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1280,13797" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence sap:VirtualizedContainerService.HintSize="1128,13769" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1128,173" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;----- Iniciando transacción 'SE16N' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1128,13601" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1128,13573" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="TransactionSE16N" sap:VirtualizedContainerService.HintSize="1090,13328" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence DisplayName="TransactionSE16N" sap:VirtualizedContainerService.HintSize="1090,13300" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="FileName" />
             <Variable x:TypeArguments="x:String" Name="FilePath" />
@@ -169,19 +169,19 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: SAP Easy Access  -  Menú usuario p. Ivan Picatoste" sap:VirtualizedContainerService.HintSize="1056,13268" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="5f923d46-81c8-449a-9e45-c625377cecec" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: SAP Easy Access  -  Menú usuario p. Ivan Picatoste" sap:VirtualizedContainerService.HintSize="1056,13240" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="5f923d46-81c8-449a-9e45-c625377cecec" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1022,12954" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1022,12926" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Acceso Transaccion" sap:VirtualizedContainerService.HintSize="988,5549" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence DisplayName="Acceso Transaccion" sap:VirtualizedContainerService.HintSize="988,5521" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="dt_temp" />
                       <Variable x:TypeArguments="x:String" Name="str_FechaDesde" />
@@ -222,7 +222,7 @@
                     </uix:NTypeInto>
                     <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="954,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Accediendo a variante 'ZSD_CARGA'&quot;]" />
-                    <uix:NCheckState DisplayName="Check App State 'ZSD_CARGA'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="954,454" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="5f923d46-81c8-449a-9e45-c625377cecec" Version="V3">
+                    <uix:NCheckState DisplayName="Check App State 'ZSD_CARGA'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="954,426" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="5f923d46-81c8-449a-9e45-c625377cecec" Version="V3">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_8">
                           <sap:WorkflowViewStateService.ViewState>
@@ -233,7 +233,7 @@
                         </Sequence>
                       </uix:NCheckState.IfExists>
                       <uix:NCheckState.IfNotExists>
-                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,177" sap2010:WorkflowViewState.IdRef="Sequence_7">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
