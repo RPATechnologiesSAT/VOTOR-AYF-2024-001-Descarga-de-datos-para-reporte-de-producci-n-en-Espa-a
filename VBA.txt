@@ -1,0 +1,19 @@
+Sub CambiarTipoATextoPorPosicion()
+    Dim ws As Worksheet
+    Dim columnas As Variant
+    Dim col As Variant ' Cambié el tipo de la variable de control a Variant
+    
+    ' Referencia a la hoja llamada "Datos"
+    Set ws = ThisWorkbook.Sheets("Datos") ' Usar la hoja "Datos"
+    
+    ' Especificar las columnas que deseas formatear (A, C, E)
+    columnas = Array(2, 3, 8,21) ' Columnas A, C, E
+    
+    ' Iterar sobre las columnas para aplicar el formato de texto
+    For Each col In columnas
+        ws.Columns(col).NumberFormat = "@" ' Aplicar el formato de texto
+    Next col
+    
+    ' Guardar los cambios y cerrar el libro
+    ThisWorkbook.Save
+End Sub
