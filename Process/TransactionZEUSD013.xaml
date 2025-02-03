@@ -129,7 +129,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TransactionZEUSD013" sap:VirtualizedContainerService.HintSize="1504,11397" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TransactionZEUSD013" sap:VirtualizedContainerService.HintSize="1450,11437" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="FileName" />
       <Variable x:TypeArguments="x:String" Name="PathName" />
@@ -142,15 +142,15 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1146,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando transacción 'ZEUSD013' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1146,11201" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1146,11241" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="1108,10928" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence sap:VirtualizedContainerService.HintSize="1108,10968" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Loading Time Query" sap:VirtualizedContainerService.HintSize="1074,10868" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="92deccae-e587-4457-a2c6-77bf7ade7a8d" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Loading Time Query" sap:VirtualizedContainerService.HintSize="1074,10908" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="92deccae-e587-4457-a2c6-77bf7ade7a8d" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -175,7 +175,7 @@
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ucas:CallTransaction DisplayName="Call Transaction 'saplogon.exe SAP'" sap:VirtualizedContainerService.HintSize="494,192" sap2010:WorkflowViewState.IdRef="CallTransaction_2" Transaction="[in_TransactionZEUSD013]">
+                    <ucas:CallTransaction DisplayName="Call Transaction 'saplogon.exe SAP'" sap:VirtualizedContainerService.HintSize="549,192" sap2010:WorkflowViewState.IdRef="CallTransaction_2" Transaction="[in_TransactionZEUSD013]">
                       <ucas:CallTransaction.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9da7de20-8f6b-4b8d-9e79-3eaa177e360c" InformativeScreenshot="c22ec7c0e830680919233f7739c77505" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access  -  Menú usuario*' /&gt;">
                           <ui:Target.TimeoutMS>
@@ -187,7 +187,7 @@
                         </ui:Target>
                       </ucas:CallTransaction.Target>
                     </ucas:CallTransaction>
-                    <ucas:ClickToolbarButton ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Click Toolbar Button 'Menubar  mbar'" sap:VirtualizedContainerService.HintSize="494,192" sap2010:WorkflowViewState.IdRef="ClickToolbarButton_1" Item="Ir a/Variantes/Obtener...">
+                    <ucas:ClickToolbarButton ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Click Toolbar Button 'Menubar  mbar'" sap:VirtualizedContainerService.HintSize="549,192" sap2010:WorkflowViewState.IdRef="ClickToolbarButton_1" Item="Ir a/Variantes/Obtener...">
                       <ucas:ClickToolbarButton.Items>
                         <scg:List x:TypeArguments="x:String" Capacity="50">
                           <x:String>Editar/Opciones seleccionadas</x:String>
@@ -253,7 +253,7 @@
                         </ui:Target>
                       </ucas:ClickToolbarButton.Target>
                     </ucas:ClickToolbarButton>
-                    <uix:NCheckState DisplayName="Check App State 'Selecciones específicas'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="494,426" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="92deccae-e587-4457-a2c6-77bf7ade7a8d" Version="V3">
+                    <uix:NCheckState DisplayName="Check App State 'Selecciones específicas'" EnableIfExists="False" sap:VirtualizedContainerService.HintSize="549,426" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="92deccae-e587-4457-a2c6-77bf7ade7a8d" Version="V3">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_16">
                           <sap:WorkflowViewStateService.ViewState>
@@ -277,13 +277,13 @@
                         <uix:TargetAnchorable DesignTimeRectangle="19, 150, 951, 256" DesignTimeScaleFactor="1" ElementType="Container" FullSelectorArgument="&lt;sap id='usr/box%BS02000_BLOCK_1000' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/box%BS02000_BLOCK_1000' check:text='Selecciones específicas de informe' /&gt;" Guid="0ad342c3-8878-4ccf-9106-8d26e4480b04" InformativeScreenshot="4fdc53662be63795acc38102a907a3d8.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Loading Time Query' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                       </uix:NCheckState.Target>
                     </uix:NCheckState>
-                    <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'LTD'" sap:VirtualizedContainerService.HintSize="494,189" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92deccae-e587-4457-a2c6-77bf7ade7a8d" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'LTD'" sap:VirtualizedContainerService.HintSize="549,189" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="92deccae-e587-4457-a2c6-77bf7ade7a8d" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="21, 214, 171, 26" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;sap id='usr/cntlALV_CONTAINER_1/shellcont/shell' text='LTD.ROBOT' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/cntlALV_CONTAINER_1/shellcont/shell' text='LTD.ROBOT' check:text='LTD.ROBOT' /&gt;" Guid="b8338f40-8eb1-49f3-bf5f-96d33a944228" InformativeScreenshot="68628f7b4672dbeb2b5d32994a391a7f.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='ABAP: Catálogo de variantes del programa AQZZZLE_LOG=====ZSDLOAD*' idx='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Accediendo a variante 'LTD.ROBOT'&quot;]" />
-                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="494,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="549,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Accediendo a variante 'LTD.ROBOT'&quot;]" />
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="549,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
                       <ui:MultipleAssign.AssignOperations>
                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -305,14 +305,14 @@
                         </scg:List>
                       </ui:MultipleAssign.AssignOperations>
                     </ui:MultipleAssign>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Introduciendo Fechas&quot;]" />
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Desde &quot;+ str_FechaDesde]" />
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '01.12.2023'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="494,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="92deccae-e587-4457-a2c6-77bf7ade7a8d" Text="[str_FechaDesde]" Version="V3">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="549,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Introduciendo Fechas&quot;]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="549,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Desde &quot;+ str_FechaDesde]" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '01.12.2023'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="549,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="92deccae-e587-4457-a2c6-77bf7ade7a8d" Text="[str_FechaDesde]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="291, 205, 107, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtSP$00006-LOW' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtSP$00006-LOW' /&gt;" Guid="f4195321-f005-4201-b831-8ee289bb946b" InformativeScreenshot="98f5cc780d00c7da0198ed834bd1b341.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Loading Time Query' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;Hasta &quot;+ str_FechaHasta]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="549,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;Hasta &quot;+ str_FechaHasta]" />
                     <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '31.12.2023'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="494,250" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="92deccae-e587-4457-a2c6-77bf7ade7a8d" Text="[str_FechaHasta]" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="491, 205, 87, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtSP$00006-HIGH' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtSP$00006-HIGH' /&gt;" Guid="c5f8e3d1-7623-4301-acc1-a3f7e219d86d" InformativeScreenshot="679be903bb8f8adc37dd68e95c843c83.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Loading Time Query' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />

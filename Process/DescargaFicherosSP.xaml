@@ -123,28 +123,28 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1408,4633" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="1100,982" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1346,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'DescargaFicherosSP' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1346,4206" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="456,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'DescargaFicherosSP' -----&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="456,618" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="DescargaFicheros" sap:VirtualizedContainerService.HintSize="1308,3945" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence DisplayName="DescargaFicheros" sap:VirtualizedContainerService.HintSize="1180,3612" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos" sap:VirtualizedContainerService.HintSize="1246,3857" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos" sap:VirtualizedContainerService.HintSize="1146,3552" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1212,3577" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1112,3311" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="user" />
                     <Variable x:TypeArguments="ss:SecureString" Name="pass" />
@@ -154,16 +154,16 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Inicio sesión SharePoint" sap:VirtualizedContainerService.HintSize="1150,693" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence DisplayName="Inicio sesión SharePoint" sap:VirtualizedContainerService.HintSize="1078,668" sap2010:WorkflowViewState.IdRef="Sequence_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Realizando login en SharePoint&quot;]" />
-                    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_CredentialsSharePoint]" CacheStrategy="None" DisplayName="Get Credential" FolderPath="[in_OrquestratorFolderPath]" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[pass]" Username="[user]" />
-                    <uix:NCheckState DisplayName="Comprobar ventana seleccion cuenta" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Trace" Message="[&quot;Realizando login en SharePoint&quot;]" />
+                    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="[in_CredentialsSharePoint]" CacheStrategy="None" DisplayName="Get Credential" FolderPath="[in_OrquestratorFolderPath]" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[pass]" Username="[user]" />
+                    <uix:NCheckState DisplayName="Comprobar ventana seleccion cuenta" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_6">
                           <sap:WorkflowViewStateService.ViewState>
@@ -197,7 +197,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NCheckState>
-                    <uix:NCheckState DisplayName="Realizar inicio sesión" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                    <uix:NCheckState DisplayName="Realizar inicio sesión" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,772" sap2010:WorkflowViewState.IdRef="Sequence_8">
                           <sap:WorkflowViewStateService.ViewState>
@@ -241,7 +241,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NCheckState>
-                    <uix:NCheckState DisplayName="¿Mantener sesion iniciada?" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                    <uix:NCheckState DisplayName="¿Mantener sesion iniciada?" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_13">
                           <sap:WorkflowViewStateService.ViewState>
@@ -275,7 +275,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NCheckState>
-                    <uix:NCheckState DisplayName="¿Sesion iniciada exitosamente?" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="388,50" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                    <uix:NCheckState DisplayName="¿Sesion iniciada exitosamente?" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_4">
                           <sap:WorkflowViewStateService.ViewState>
@@ -306,7 +306,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NCheckState>
                   </Sequence>
-                  <Sequence DisplayName="Descarga ficheros Excel" sap:VirtualizedContainerService.HintSize="1150,2794" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <Sequence DisplayName="Descarga ficheros Excel" sap:VirtualizedContainerService.HintSize="1078,2581" sap2010:WorkflowViewState.IdRef="Sequence_15">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="si:FileInfo" Name="tempFile" />
                     </Sequence.Variables>
@@ -316,30 +316,30 @@
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1088,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Navegando a ficheros Excel&quot;]" />
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Plantillas_Robot'" sap:VirtualizedContainerService.HintSize="1088,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1044,177" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Navegando a ficheros Excel&quot;]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Plantillas_Robot'" sap:VirtualizedContainerService.HintSize="1044,190" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="416, 441, 122, 20" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl type='button' aaname='*Plantillas_Robot*' /&gt;" FuzzySelectorArgument="&lt;webctrl type='button' aaname='Plantillas_Robot' tag='BUTTON' class='ms-Link root_871ff242 nameField_a4c939b0 clickable_a4c939b0 overflow_85ed223c pre_85ed223c' check:text='Plantillas_Robot' /&gt;" Guid="ae4a7475-e49a-4459-9418-36642e19d2be" ImageBase64="" InformativeScreenshot="eb616d954670c5b873f2d3d574e74645.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[tempFile]" sap:VirtualizedContainerService.HintSize="1088,1077" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" IgnoreFiles="tmp,dwn,crdownload">
+                    <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[tempFile]" sap:VirtualizedContainerService.HintSize="1044,1029" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" IgnoreFiles="tmp,dwn,crdownload">
                       <ui:GetLastDownloadedFile.Body>
                         <ActivityAction>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,789" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,737" sap2010:WorkflowViewState.IdRef="Sequence_16">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NCheckState DisplayName="Check App State 'Descargar'" sap:VirtualizedContainerService.HintSize="954,701" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                            <uix:NCheckState DisplayName="Check App State 'Descargar'" sap:VirtualizedContainerService.HintSize="954,677" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                               <uix:NCheckState.IfExists>
-                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Descargar'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Descargar'" sap:VirtualizedContainerService.HintSize="416,183" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA%2FPlantillas%5FRobot&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="1430, 273, 62, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Descargar' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Descargar' tag='SPAN' type='' class='ms-Button-label label-221' check:text='Descargar' /&gt;" Guid="612fb7fe-ef0e-4127-9f6a-5960df40aa5e" InformativeScreenshot="42c37cf42e94a6b230057d78888bf545.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Plantillas_Robot - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                     </uix:NClick.Target>
@@ -347,18 +347,18 @@
                                 </Sequence>
                               </uix:NCheckState.IfExists>
                               <uix:NCheckState.IfNotExists>
-                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,461" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,435" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Agregar acceso'" sap:VirtualizedContainerService.HintSize="388,189" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Agregar acceso'" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA%2FPlantillas%5FRobot&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="509, 265, 17, 16" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aaname='' parentid='appRoot' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='' parentid='appRoot' tag='I' type='' class='ms-Icon root-90 css-146 ms-Button-menuIcon menuIcon-166' check:text='' /&gt;" Guid="e0da2833-6799-4a4f-a9bd-37580586f470" InformativeScreenshot="df01e3da29d2ad11cf29236dda9dafd0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Plantillas_Robot - Todos los documentos' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Descargar'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Descargar'" sap:VirtualizedContainerService.HintSize="416,183" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA%2FPlantillas%5FRobot&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" CVScreenId="f391bd3b-6423-41d6-8a65-aa480bebfd2d" CvTextArea="1430, 313, 63, 16" CvTextArgument="Descargar" CvType="Text" DesignTimeRectangle="1430, 302, 141, 36" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentname='Descargar' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='Descargar' tag='SPAN' type='' class='ms-ContextualMenu-itemText label-296' aaname='Descargar' check:text='Descargar' /&gt;" Guid="675f997f-4833-4589-922c-99054695490c" InformativeScreenshot="1f1828ed66a0fdecca5853f1d3f4882f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Plantillas_Robot - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                     </uix:NClick.Target>
@@ -373,10 +373,10 @@
                         </ActivityAction>
                       </ui:GetLastDownloadedFile.Body>
                     </ui:GetLastDownloadedFile>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1088,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Descomprimiento fichero en carpeta /Data&quot;]" />
-                    <uascw:ExtractFiles Content="{x:Null}" DestinationFolderInfo="{x:Null}" File="{x:Null}" Password="{x:Null}" CodePage="Default" ConflictResolution="Replace" DestinationFolder="[Environment.CurrentDirectory + &quot;\Data&quot;]" DisplayName="Extract/Unzip Files" ExtractToADedicatedFolder="False" FileToExtract="[tempFile.ToString]" sap:VirtualizedContainerService.HintSize="1088,239" sap2010:WorkflowViewState.IdRef="ExtractFiles_1" SkipUnsupportedFiles="False" />
-                    <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="1088,112" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[tempFile.ToString]" />
-                    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[Environment.CurrentDirectory +&quot;\Data\00_Plantillas_Robot ( No tocar )&quot;]" sap:VirtualizedContainerService.HintSize="1088,712" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1044,177" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Descomprimiento fichero en carpeta /Data&quot;]" />
+                    <uascw:ExtractFiles Content="{x:Null}" DestinationFolderInfo="{x:Null}" File="{x:Null}" Password="{x:Null}" CodePage="Default" ConflictResolution="Replace" DestinationFolder="[Environment.CurrentDirectory + &quot;\Data&quot;]" DisplayName="Extract/Unzip Files" ExtractToADedicatedFolder="False" FileToExtract="[tempFile.ToString]" sap:VirtualizedContainerService.HintSize="1044,242" sap2010:WorkflowViewState.IdRef="ExtractFiles_1" SkipUnsupportedFiles="False" />
+                    <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="1044,113" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[tempFile.ToString]" />
+                    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[Environment.CurrentDirectory +&quot;\Data\00_Plantillas_Robot ( No tocar )&quot;]" sap:VirtualizedContainerService.HintSize="1044,566" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                       <ui:ForEachFileX.Body>
                         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                           <ActivityAction.Argument1>
@@ -385,14 +385,14 @@
                           <ActivityAction.Argument2>
                             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                           </ActivityAction.Argument2>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1054,425" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1010,274" sap2010:WorkflowViewState.IdRef="Sequence_17">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[If(CurrentFile.ToString.Contains(&quot;SE16N&quot;), &quot;SE16N&quot;, If(CurrentFile.ToString.Contains(&quot;OTD&quot;), &quot;OTD&quot;, If(CurrentFile.ToString.Contains(&quot;LT&quot;), &quot;LT&quot;, &quot;DEFAULT&quot;)))]" sap:VirtualizedContainerService.HintSize="992,335" sap2010:WorkflowViewState.IdRef="Switch`1_1">
-                              <Assign x:Key="SE16N" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[If(CurrentFile.ToString.Contains(&quot;SE16N&quot;), &quot;SE16N&quot;, If(CurrentFile.ToString.Contains(&quot;OTD&quot;), &quot;OTD&quot;, If(CurrentFile.ToString.Contains(&quot;LT&quot;), &quot;LT&quot;, &quot;DEFAULT&quot;)))]" sap:VirtualizedContainerService.HintSize="976,212" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                              <Assign x:Key="SE16N" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_4">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[out_SE16N]</OutArgument>
                                 </Assign.To>
@@ -400,7 +400,7 @@
                                   <InArgument x:TypeArguments="x:String">[CurrentFile.ToString]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <Assign x:Key="OTD" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                              <Assign x:Key="OTD" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_5">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[out_OTD]</OutArgument>
                                 </Assign.To>
@@ -408,7 +408,7 @@
                                   <InArgument x:TypeArguments="x:String">[CurrentFile.ToString]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <Assign x:Key="LT" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+                              <Assign x:Key="LT" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_6">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[out_LT]</OutArgument>
                                 </Assign.To>
@@ -438,10 +438,10 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1296,23" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,420" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -449,19 +449,19 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="Sequence_26">
+            <Sequence sap:VirtualizedContainerService.HintSize="416,349" sap2010:WorkflowViewState.IdRef="Sequence_26">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[&quot;SE: Ha ocurrido un error durante la navegación DescargaFicheros(&quot; + exception.Message +&quot;)&quot;]" />
-              <Throw Exception="[new SystemException(&quot;SE: Ha ocurrido un error durante la navegación DescargaFicheros(&quot; + exception.Message +&quot;)&quot;)]" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Error" Message="[&quot;SE: Ha ocurrido un error durante la navegación DescargaFicheros(&quot; + exception.Message +&quot;)&quot;]" />
+              <Throw Exception="[new SystemException(&quot;SE: Ha ocurrido un error durante la navegación DescargaFicheros(&quot; + exception.Message +&quot;)&quot;)]" sap:VirtualizedContainerService.HintSize="382,114" sap2010:WorkflowViewState.IdRef="Throw_1" />
             </Sequence>
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1330,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando secuencia 'DescargaFicherosSP' -----&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="456,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando secuencia 'DescargaFicherosSP' -----&quot;]" />
   </Sequence>
 </Activity>
