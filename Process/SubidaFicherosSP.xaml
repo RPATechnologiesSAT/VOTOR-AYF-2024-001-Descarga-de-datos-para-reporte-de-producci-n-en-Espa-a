@@ -134,14 +134,14 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SubidaFicherosSP" sap:VirtualizedContainerService.HintSize="1817,5165" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SubidaFicherosSP" sap:VirtualizedContainerService.HintSize="1817,5096" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1817,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'SubidaFicherosSP' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1817,4805" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1817,4736" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -149,20 +149,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="SubidaFicheros" sap:VirtualizedContainerService.HintSize="1779,4545" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="SubidaFicheros" sap:VirtualizedContainerService.HintSize="1779,4476" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos" sap:VirtualizedContainerService.HintSize="1745,4422" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos" sap:VirtualizedContainerService.HintSize="1745,4416" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1711,4205" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1711,4136" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="user" />
                     <Variable x:TypeArguments="ss:SecureString" Name="pass" />
@@ -173,7 +173,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Inicio sesión SharePoint" sap:VirtualizedContainerService.HintSize="1677,99" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <Sequence DisplayName="Inicio sesión SharePoint" sap:VirtualizedContainerService.HintSize="1677,57" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -325,7 +325,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NCheckState>
                   </Sequence>
-                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1677,84" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1677,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                     <ui:CommentOut.Body>
                       <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,1199" sap2010:WorkflowViewState.IdRef="Sequence_22">
                         <sap:WorkflowViewStateService.ViewState>
@@ -422,12 +422,12 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cargar'" sap:VirtualizedContainerService.HintSize="1507,189" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA%2Ftet&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="444, 264, 101, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='appRoot' parentname='Cargar' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='appRoot' parentname='Cargar' tag='SPAN' type='' class='ms-Button-flexContainer flexContainer-161' aaname='' check:innerText='&amp;#xD;&amp;#xA;Cargar&amp;#xD;&amp;#xA;' /&gt;" Guid="63d453da-d6a7-44ac-90c2-40581dba5807" ImageBase64="" InformativeScreenshot="9995dbfe35ff4db5c1676c55af974925.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - tet - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA%2Ftet&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="439, 230, 92, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='appRoot' tag='SPAN' innertext='Cargar' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='appRoot' tag='SPAN' innertext='Cargar' type='' class='container_a4f5cb66' aaname='' check:text='Cargar' /&gt;" Guid="63d453da-d6a7-44ac-90c2-40581dba5807" InformativeScreenshot="aa391a36197e56d94a9badccdaaa6c6a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                   <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Archivos'" sap:VirtualizedContainerService.HintSize="1507,189" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                                     <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA%2Ftet&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="452, 302, 160, 36" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentname='Archivo*' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='Archivos' tag='SPAN' type='' class='ms-ContextualMenu-itemText label-363' aaname='Archivos' check:innerText='Archivos' /&gt;" Guid="ac540ba8-a9ac-435d-b87e-81f3cd7e0cfb" ImageBase64="" InformativeScreenshot="f5451a51c4c1408e2009ce71a29cdc09.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - tet - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                      <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA%2Ftet&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="439, 268, 168, 36" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='command-bar-menu-id' tag='DIV' innertext='*Archivos' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='command-bar-menu-id' tag='DIV' innertext='*Archivos' type='' class='ms-ContextualMenu-linkContent linkContent-248' aaname='' check:text='Archivos' /&gt;" Guid="ac540ba8-a9ac-435d-b87e-81f3cd7e0cfb" InformativeScreenshot="f5b05ece881a59169ca13235fa70305c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
                                   <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="1507,817" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="3d38a945-e261-423c-ac3b-79f2c5e0ee3e" Version="V2">
@@ -568,7 +568,7 @@
                                       </Sequence>
                                     </uix:NCheckState.IfExists>
                                     <uix:NCheckState.IfNotExists>
-                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
